@@ -1,0 +1,55 @@
+body{
+	margin-top: 4rem;
+	background-color: #E6E6FA;
+	font: small-caps bold 24px/1 sans-serif;;
+}
+
+h1{
+	text-align: center;
+}
+ 
+img{
+	margin-top: 8rem;
+	border-radius: 10%;
+}
+
+.images {
+    text-align: center;
+}
+
+.btn{
+	text-align: center;
+}
+
+button{
+	border: 0;
+	border-radius: 5px;
+	padding: 8px 35px;
+	font-size: 1rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+button:hover{
+    background: #F0FFFF;
+    border: #F0FFFF;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+@keyframes rumble{
+	0% {transform: translate(0, 0) rotate(0);}
+	16.66%{transform: translate(4px, -2px) rotate(-5deg);}
+	33.32%{transform: translate(4px, 2px) rotate(5deg);}
+	49.98%{transform: translate(0, 0) rotate(0);}
+	66.64%{transform: translate(-4px, -2px) rotate(5deg);}
+	83.30%{transform: translate(-4px, -2px) rotate(-5deg);}
+	100%{transform: translate(0, 0) rotate(0);}
+}
+
+.rumble{
+	animation:rumble 0.02s linear 6;
+}
